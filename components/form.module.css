@@ -1,0 +1,97 @@
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.contactForm {
+  max-width: 66.66667%;
+}
+
+.contactForm .control {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none;
+  padding: 0.375rem 20px;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.5;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.contactForm label {
+  display: none;
+}
+
+.control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.control:-ms-input-placeholder {
+  /* IE 0+ */
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.control:-moz-placeholder {
+  /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.control:focus,
+.control:active {
+  border-color: #bc9864 !important;
+  background: rgba(11, 11, 11, 0.2);
+}
+
+.formButton button {
+  background: #314577 !important;
+  border-color: #314577 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%;
+  display: block;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+  -moz-box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 10px 20px -6px rgb(0 0 0 / 12%);
+  position: relative;
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.message {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.message .error {
+  color: red;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  .contactForm .control {
+    background: rgba(203, 17, 17, 0.03);
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+} */
