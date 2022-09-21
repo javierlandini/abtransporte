@@ -28,7 +28,7 @@ export default async function handler(req, res) {
       from: process.env.SUPPORT_EMAIL, // your website email address here
       replyTo: body.email,
       subject: `Contacto desde sitio web`,
-      text: `Nombre: ${body.nombre} \n Teléfono: ${body.telefono} \n ${body.mensaje}`,
+      text: `Nombre: ${body.nombre} \n\nTeléfono: ${body.telefono} \n\n${body.mensaje}`,
     });
   } catch (error) {
     return res.status(error.statusCode || 500).json({ data: error.message });

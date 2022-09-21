@@ -3,7 +3,7 @@
 }
 
 .contactForm {
-  max-width: 66.66667%;
+  width: 90%;
 }
 
 .contactForm .control {
@@ -22,30 +22,39 @@
   font-weight: 400;
   line-height: 1.5;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  text-align: center;
 }
 
 .contactForm label {
   display: none;
 }
 
+.control::placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+  text-align: center;
+}
 .control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(255, 255, 255, 0.3) !important;
+  text-align: center;
 }
 
 .control::-moz-placeholder {
   /* Firefox 19+ */
   color: rgba(255, 255, 255, 0.3) !important;
+  text-align: center;
 }
 
 .control:-ms-input-placeholder {
   /* IE 0+ */
   color: rgba(255, 255, 255, 0.3) !important;
+  text-align: center;
 }
 
 .control:-moz-placeholder {
   /* Firefox 18- */
   color: rgba(255, 255, 255, 0.3) !important;
+  text-align: center;
 }
 
 .control:focus,
@@ -89,6 +98,11 @@
   color: red;
 }
 
+@media (min-width: 768px) {
+  .contactForm {
+    width: 40%;
+  }
+}
 /* @media (prefers-color-scheme: dark) {
   .contactForm .control {
     background: rgba(203, 17, 17, 0.03);
