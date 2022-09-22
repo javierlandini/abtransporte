@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Script from "next/script";
 import styles from "./whatsapp.module.css";
-import whatsappImage from "../public/img/WhatsApp_Logo_1.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 export default function Whatsapp() {
   return (
     <>
@@ -24,7 +24,7 @@ export default function Whatsapp() {
           rel="noopener noreferrer"
           aria-label="Contactanos por WhatsApp"
         >
-          <Image src={whatsappImage} alt="" width={50} height={50} />
+          <FontAwesomeIcon icon={faWhatsapp} />
         </a>
       </div>
     </>

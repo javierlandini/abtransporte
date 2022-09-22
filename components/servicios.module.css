@@ -16,7 +16,8 @@
   max-width: 100%;
   padding: 30px;
   border: 1px solid;
-    margin: 0 10px;
+  border-radius: 5px;
+    margin: 10px 10px;
 }
 
 .grillaServicios p {

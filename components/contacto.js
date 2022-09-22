@@ -1,7 +1,4 @@
-import Navigation from "./navigation";
 import Form from "./form";
-import Footer from "./footer";
-import Whatsapp from "./whatsapp";
 import styles from "../styles/Home.module.css";
 import moduleStyles from "./contacto.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -30,7 +27,7 @@ export default function Contacto() {
               <FontAwesomeIcon icon={faClock} />
             </div>
             <h4>Horarios de atención</h4>
-            <p>Lunes a viernes de 07:00hs a 19:00hs</p>
+            <p>Lunes a sábados de 06:30hs a 19:00hs</p>
             <mark>(Consultar por excepciones)</mark>
           </div>
           <div className={moduleStyles.card}>
@@ -38,7 +35,7 @@ export default function Contacto() {
               <FontAwesomeIcon icon={faMapMarker} />
             </div>
             <h4>Zona de cobertura</h4>
-            <p>Viajes a todo el país</p>
+            <p>Viajes locales y a todo el país</p>
           </div>
         </div>
         <Form />

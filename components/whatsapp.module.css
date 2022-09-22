@@ -1,6 +1,23 @@
 .whatsappContact {
   position: fixed;
-  bottom: 32%;
-  right: 15px;
+  bottom: 10%;
+    right: 20px;
   z-index: 9999;
+  width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 9999;
+    text-align: center;
+    background: #88c136;
+    color: #fff;
+    opacity: 0.8;
+    border-color: #88c136 !important;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+

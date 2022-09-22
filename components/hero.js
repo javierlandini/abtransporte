@@ -17,8 +17,7 @@ export default function Hero() {
         Desde el primer momento demostramos a nuestros clientes la calidad de
         nuestros servicios, cubriendo y adaptándonos a sus necesidades, siendo
         versátiles y competitivos ya que al ser una empresa familiar tenemos la
-        ventaja de no tercerizar nuestro servicio, brindando el menor costo y la
-        mayor rentabilidad.
+        ventaja de no tercerizar, brindando una mejor atención.
       </p>
     </section>
   );

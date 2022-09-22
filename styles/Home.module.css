@@ -24,7 +24,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+background-color: #1836a257;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.footer a:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .title a {
