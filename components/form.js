@@ -91,8 +91,9 @@ export default function Form() {
           <textarea
             id="mensaje"
             name="mensaje"
-            className={styles.control}
+            className={styles.control + " " + styles.textarea}
             placeholder="Consulta"
+            rows="4"
           ></textarea>
         </div>
         <div className={styles.formButton}>

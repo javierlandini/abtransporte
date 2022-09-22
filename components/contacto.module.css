@@ -27,6 +27,19 @@
   padding: 20px;
 }
 
+.contacto .card h4 {
+  margin-bottom: 0.7em;
+}
+
+.contacto .card p {
+  padding: 0;
+  margin: 0;
+}
+
+.contacto .card mark {
+  color: #ffffff6e;
+  background-color: transparent;
+}
 .contacto .icon {
   font-size: 25px;
 }
@@ -34,10 +47,10 @@
 @media (min-width: 768px) {
   .contacto .cards {
     flex-direction: row;
+    justify-content: center;
   }
 
   .contacto .card {
-
-    width: 33.33%;
+    width: 13.33%;
   }
 }

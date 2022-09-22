@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #314577;
+  background-color: #1837A2;
   color: #fff;
   position: fixed;
   top: 0;
@@ -31,7 +31,7 @@
 }
 
 .menu li:hover {
-  background-color: #425a97;
+  background-color: #0C0C0C36;
   border-radius: 5px;
   transition: 0.3s ease;
 }
@@ -59,7 +59,7 @@
   .menu {
     display: none;
     position: absolute;
-    background-color: #314577;
+    background-color: #1837A2;
     right: 0;
     left: 0;
     text-align: center;
@@ -68,8 +68,6 @@
 
   .menu li:hover {
     display: inline-block;
-    background-color: #425a97;
-    transition: 0.3s ease;
   }
 
   .menu li+li {

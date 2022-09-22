@@ -5,7 +5,7 @@
 
 .banner {
   background-image: url('/img/camion-bg1.jpg');
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   height: 60vh;
   display: flex;
@@ -48,6 +48,9 @@
 }
 
 @media (min-width: 768px) {
+.banner {
+    background-size: contain;
+  }
   .banner h1 {
     display: block;
   }

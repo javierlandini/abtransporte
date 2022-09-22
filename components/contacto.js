@@ -21,22 +21,23 @@ export default function Contacto() {
             <div className={moduleStyles.icon}>
               <FontAwesomeIcon icon={faPhone} />
             </div>
-            <h3>Teléfono (respondemos llamadas y WhatsApp)</h3>
+            <h4>Teléfono</h4>
             <p>+54 9 341 5118786</p>
+            <mark>(respondemos llamadas y WhatsApp)</mark>
           </div>
           <div className={moduleStyles.card}>
             <div className={moduleStyles.icon}>
               <FontAwesomeIcon icon={faClock} />
             </div>
-            <h3>Horarios de atención</h3>
+            <h4>Horarios de atención</h4>
             <p>Lunes a viernes de 07:00hs a 19:00hs</p>
-            <p>(Consultar por excepciones)</p>
+            <mark>(Consultar por excepciones)</mark>
           </div>
           <div className={moduleStyles.card}>
             <div className={moduleStyles.icon}>
               <FontAwesomeIcon icon={faMapMarker} />
             </div>
-            <h3>Zona de cobertura</h3>
+            <h4>Zona de cobertura</h4>
             <p>Viajes a todo el país</p>
           </div>
         </div>

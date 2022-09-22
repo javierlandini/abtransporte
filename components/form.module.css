@@ -22,7 +22,12 @@
   font-weight: 400;
   line-height: 1.5;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  text-align: center;
+  /* text-align: center; */
+    font-family: inherit;
+  }
+
+  .contactForm .control.textarea {
+    height: auto;
 }
 
 .contactForm label {
@@ -31,12 +36,12 @@
 
 .control::placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
-  text-align: center;
+  /* text-align: center; */
 }
 .control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: rgba(255, 255, 255, 0.3) !important;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .control::-moz-placeholder {
@@ -64,8 +69,8 @@
 }
 
 .formButton button {
-  background: #314577 !important;
-  border-color: #314577 !important;
+  background: #1837A2;
+    border-color: #1837A2;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -87,6 +92,10 @@
   transition: 0.3s;
 }
 
+.formButton button:hover {
+  background-color: #1836a280;
+  border-color: #1836a280;
+}
 .message {
   color: white;
   padding: 10px 0;
