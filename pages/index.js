@@ -27,7 +27,7 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/img/AB-logo-white.png`}
+          content={`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/img/AB-logo-blue.jpg`}
           key="ogImage"
         />
         <link rel="icon" href="/favicon.ico" />
