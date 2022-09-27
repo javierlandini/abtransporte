@@ -101,10 +101,11 @@
   padding: 10px 0;
   text-align: center;
   font-weight: bold;
+  background-color: green;
 }
 
 .message .error {
-  color: red;
+  background-color: red;
 }
 
 @media (min-width: 768px) {

@@ -25,10 +25,13 @@ export default async function handler(req, res) {
   try {
     await sendgrid.send({
       to: process.env.SUPPORT_EMAIL, // Your email where you'll receive emails
-      from: process.env.SUPPORT_EMAIL, // your website email address here
+      from: {
+        email: process.env.NOTIFICATION_EMAIL, // your website email address here
+        name: "Notificaciones Sitio Web",
+      },
       replyTo: body.email,
       subject: `Contacto desde sitio web`,
-      text: `Nombre: ${body.nombre} \n\nTeléfono: ${body.telefono} \n\n${body.mensaje}`,
+      text: `Nombre: ${body.nombre} \n\nTeléfono: ${body.telefono}\n\nEmail: ${body.email}\n\n${body.mensaje}`,
     });
   } catch (error) {
     return res.status(error.statusCode || 500).json({ data: error.message });
