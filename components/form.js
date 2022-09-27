@@ -35,8 +35,7 @@ export default function Form() {
     const response = await fetch(endpoint, options);
     let msg = document.getElementById("message");
     if (response.status == 200) {
-      msg.innerHTML =
-        "Gracias por su mensaje, nos comunicaremos a la brevedad.";
+      msg.innerHTML = `<span class="${styles.success}">Gracias por su mensaje, nos comunicaremos a la brevedad.</span>`;
     } else {
       msg.innerHTML = `<span class="${styles.error}">Hubo un error, por favor intente nuevamente más tarde o contáctenos por WhatsApp.</span>`;
     }

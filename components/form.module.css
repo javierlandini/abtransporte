@@ -101,9 +101,17 @@
   padding: 10px 0;
   text-align: center;
   font-weight: bold;
-  background-color: green;
 }
 
+.message span {
+  display: block;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.message .success {
+  background-color: green;
+}
 .message .error {
   background-color: red;
 }
