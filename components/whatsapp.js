@@ -11,14 +11,14 @@ export default function Whatsapp() {
   if (navigator.userAgent.match(/iPhone|Android|webOS|BlackBerry|iPod/i)) {
     url_prefix = "api";
   }
-  let wa_link = 'https://' + url_prefix + '.whatsapp.com/send?phone=+5492613442588&text=De%20abtransporte.com:%20Hola!%20Quer%C3%ADa%20consultarte%20sobre%20el%20servicio%20de%20transporte.';
+  let wa_link = 'https://' + url_prefix + '.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_WA_NUMBER}&text=De%20abtransporte.com:%20Hola!%20Quer%C3%ADa%20consultarte%20sobre%20el%20servicio%20de%20transporte.';
   document.getElementById('whatsapp-link').href = wa_link;
   `}
       </Script>
       <div className={styles.whatsappContact}>
         <a
           id="whatsapp-link"
-          href="https://web.whatsapp.com/send?phone=+5492613442588&text=De%20abtransporte.com:%20Hola!%20Quer%C3%ADa%20consultarte%20sobre%20el%20servicio%20de%20transporte."
+          href={`https://web.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_WA_NUMBER}&text=De%20abtransporte.com:%20Hola!%20Quer%C3%ADa%20consultarte%20sobre%20el%20servicio%20de%20transporte.`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Contactanos por WhatsApp"

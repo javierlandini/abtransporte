@@ -19,7 +19,7 @@ export default function Contacto() {
               <FontAwesomeIcon icon={faPhone} />
             </div>
             <h4>Teléfono</h4>
-            <p>+54 9 341 5118786</p>
+            <p>{process.env.NEXT_PUBLIC_WA_NUMBER}</p>
             <mark>(respondemos llamadas y WhatsApp)</mark>
           </div>
           <div className={moduleStyles.card}>
