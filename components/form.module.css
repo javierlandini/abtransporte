@@ -1,9 +1,13 @@
+.contactForm {
+  width: 90%;
+}
 .formGroup {
   margin-bottom: 1rem;
 }
 
-.contactForm {
-  width: 90%;
+.formGroup2 {
+  position: absolute;
+  top: -1000px;
 }
 
 .contactForm .control {
@@ -92,9 +96,13 @@
   transition: 0.3s;
 }
 
-.formButton button:hover {
+.formButton button:hover,
+.formButton button:disabled {
   background-color: #1836a280;
   border-color: #1836a280;
+}
+.formButton button:disabled {
+  cursor: default;
 }
 .message {
   color: white;

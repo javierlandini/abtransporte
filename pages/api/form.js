@@ -14,6 +14,11 @@ export default async function handler(req, res) {
   console.log("body: ", body);
   console.log("request: ", req);
 
+  // Anti spam check.
+  if (body.email2) {
+    return res.status(500).json({ data: "Error en los datos." });
+  }
+
   // Check required data.
   if (!body.nombre || !body.email || !body.telefono) {
     // Sends a HTTP bad request error code

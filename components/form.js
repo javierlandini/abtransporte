@@ -4,11 +4,12 @@ export default function Form() {
   const handleSubmit = async (event) => {
     // Stop the form from submitting and refreshing the page.
     event.preventDefault();
-
+    event.target.submit.setAttribute("disabled", "");
     // Get data from the form.
     const data = {
       nombre: event.target.nombre.value,
       email: event.target.email.value,
+      email2: event.target.email2.value,
       telefono: event.target.telefono.value,
       mensaje: event.target.mensaje.value,
     };
@@ -38,11 +39,8 @@ export default function Form() {
       msg.innerHTML = `<span class="${styles.success}">Gracias por su mensaje, nos comunicaremos a la brevedad.</span>`;
     } else {
       msg.innerHTML = `<span class="${styles.error}">Hubo un error, por favor intente nuevamente más tarde o contáctenos por WhatsApp.</span>`;
+      event.target.submit.removeAttribute("disabled");
     }
-    // Get the response data from server as JSON.
-    // If server returns the name submitted, that means the form works.
-    const result = await response.json();
-    console.log(result);
   };
   return (
     <>
@@ -53,6 +51,16 @@ export default function Form() {
         method="post"
       >
         <div className={styles.message} id="message"></div>
+        <div className={styles.formGroup2}>
+          <label htmlFor="email2">Repeat email</label>
+          <input
+            type="input"
+            id="email2"
+            name="email2"
+            placeholder="Repeat email"
+            autocomplete="off"
+          />
+        </div>
         <div className={styles.formGroup}>
           <label htmlFor="nombre">Nombre</label>
           <input
@@ -96,7 +104,9 @@ export default function Form() {
           ></textarea>
         </div>
         <div className={styles.formButton}>
-          <button type="submit">Enviar</button>
+          <button id="submit" type="submit">
+            Enviar
+          </button>
         </div>
       </form>
     </>
